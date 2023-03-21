@@ -11,16 +11,4 @@
   position: absolute;
   top: 26%;
   left: 15%;
-}
-
-.present-info {
-  background: #FFFFFF;
-  border-radius: 10px;
-  width: 25%;
-  height: 30%;
-  padding: 48px 20px 48px 48px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=mainSection.css.map */
