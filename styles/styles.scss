@@ -1,0 +1,64 @@
+@import './colors.scss';
+@import './btn/btn.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Raleway:wght@300;500&display=swap');
+
+*{
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: initial;
+  border: none;
+}
+
+@mixin flex($ai, $jc, $gap){
+  display: flex;
+  align-items: $ai;
+  justify-content: $jc;
+  gap: $gap;
+}
+
+@mixin Inter($fs, $fw, $lh){
+  font-family: 'Inter', sans-serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin Raleway($fs, $fw, $lh){
+  font-family: 'Raleway', sans-serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+.header{
+  @include flex(center, center, 10vw);
+  padding: 10px 0;
+
+}
+
+.logo{
+  @include flex(center, center, initial);
+
+  &__text{
+    @include Inter(18px, 300, 25px);
+    color: $dark;
+    text-transform: uppercase;
+  }
+
+}
+
+.nav{
+  @include flex(center, center, 2vw);
+  @include Inter(18px, 500, 22px);
+
+}
+
+.langBar{
+  @include flex(center, center, 0.6vw);
+  @include Inter(18px, 500, 22px);
+
+}
+
+

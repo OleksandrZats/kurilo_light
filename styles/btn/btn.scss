@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Raleway:wght@300;500&display=swap');
+@import '../colors.scss';
+
+@mixin Inter($fs, $fw, $lh){
+  font-family: 'Inter', sans-serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+.btn{
+  @include Inter(16px, 600, 24px);
+  background-color: $red;
+  color: $white;
+  box-shadow: 0px 4px 16px rgba(245, 84, 73, 0.24);
+  border-radius: 50px;
+  padding: 16px 40px;
+
+  &:hover{
+    background-color: #D13D33;
+  }
+
+  &:active{
+    background-color: #C6332A;
+  }
+}
